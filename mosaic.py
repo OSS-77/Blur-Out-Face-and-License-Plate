@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import imutils
 
+#detect_face.py
 def detectFace(img):
     cascPath = "haarcascade_frontalface_default.xml"
     faceCascade = cv2.CascadeClassifier(cascPath)
@@ -10,7 +11,7 @@ def detectFace(img):
     faces = faceCascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=5)
 
     return faces
-
+#detect_LP.py
 def detect_LP(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 

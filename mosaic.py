@@ -1,3 +1,5 @@
+import os
+
 import cv2
 import numpy as np
 import imutils
@@ -77,13 +79,15 @@ def process_image(input_image_path):
         original_image = mosaic_area(original_image, x, y, w, h, mosaic_ratio)
 
     # 결과 이미지 저장
-    output_image_path = 'data/mosaic_result.jpg'
+    wd=os.getcwd()
+    output_image_path = wd+'/data/mosaic_result.jpg'
     opencv_img_save(original_image, output_image_path, 'mosaic_result.jpg')
 
     # 결과 이미지 반환
     return output_image_path
 
-if __name__ == "__main__":
-    input_image_path = 'data/mosaic test.jpg'
-    result_image_path = process_image(input_image_path)
-    print(f"결과 이미지 저장 완료: {result_image_path}")
+# if __name__ == "__main__":
+#     input_image_path = 'data/car_test.jpeg'
+#     result_image_path = process_image(input_image_path)
+#     print(f"결과 이미지 저장 완료: {result_image_path}")
+

@@ -27,6 +27,8 @@ python main.py --image /data/mosaic_test.jpg
 | :----------------------------------: | :--------------------------------------: | 
 |  ![image](./data/mosaic_test.jpg)     |  ![image](./data/car_test.jpgmosaic_result.jpg)   |     
 |  ![image](./data/mosaic_test2.jpg)     | ![image](./data/mosaic_result.jpgmosaic_result.jpg) |
+|  ![image](./data/mosaic_test3.jpg)     | ![image](./data/mosaic_test3.jpgmosaic_result.jpg) |
+
 
 
 ---
@@ -36,3 +38,8 @@ Detecting face: [Face-Detection-OpenCV](https://github.com/informramiz/Face-Dete
 Dectecting car license plate: [License_Plate_Detection_Pytorch](https://github.com/xuexingyu24/License_Plate_Detection_Pytorch)
 
 Mosaic: [opencv](https://github.com/opencv/opencv)
+
+#### Image reference:
+[Albert Einstein](https://www.donga.com/news/Inter/article/all/20180615/90591512/1)<br>
+[Car license plate](https://v.daum.net/v/9UExYEKwTv)<br>
+[The man with car](https://www.providencejournal.com/story/business/automotive/2019/02/01/tag-tale-license-plates-have-brought-them-good-luck/6139069007/)

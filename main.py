@@ -3,6 +3,7 @@ from detect_LP import detect_LP, ocr_image
 from detect_face import detectFace
 from mosaic import mosaic_area, opencv_img_save
 import cv2
+import argparse
 
 def process_image(input_image_path):
     img = cv2.imread(input_image_path)
@@ -43,11 +44,18 @@ def process_image(input_image_path):
 
     # 결과 이미지 저장
     wd=os.getcwd()
-    output_image_path = wd+'/data/mosaic_result.jpg'
+    output_image_path = wd+'\data\mosaic_result.jpg'
     opencv_img_save(original_image, output_image_path, '_mosaic.jpg')
     print(f'Output is stored in {output_image_path}_mosaic.jpg')
     # 결과 이미지 반환
     return output_image_path
 
+# construct the argument parse and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument('-i', '--image', required=True,
+	help="path to the input image")
+args = vars(ap.parse_args())
+
 wd=os.getcwd()
-result = process_image(wd+'/data/car_test.jpeg')
+print(args['image'])
+result = process_image(wd+args['image'])

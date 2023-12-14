@@ -31,9 +31,8 @@ python main.py --image /data/mosaic_test.jpg
 
 ---
 ### Reference
-Detecting face: [Face-Detection-OpenCV]
-(https://github.com/informramiz/Face-Detection-OpenCV)
+Detecting face: [Face-Detection-OpenCV](https://github.com/informramiz/Face-Detection-OpenCV)
 
 Dectecting car license plate: [License_Plate_Detection_Pytorch](https://github.com/xuexingyu24/License_Plate_Detection_Pytorch)
 
-Mosaic: 
+Mosaic: [opencv](https://github.com/opencv/opencv)
